@@ -1,7 +1,5 @@
 import React from 'react'
 import EmployeeForm from "./EmployeeForm";
-import PageHeader from "../../components/PageHeader";
-import PeopleOutlineTwoToneIcon from '@material-ui/icons/PeopleOutlineTwoTone';
 import { Paper,makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
@@ -17,11 +15,6 @@ export default function Employees() {
 
     return (
         <>
-            <PageHeader
-                title="New Employee"
-                subTitle="Form design with validation"
-                icon={<PeopleOutlineTwoToneIcon fontSize="large" />}
-            />
             <Paper className={classes.pageContent}>
                 <EmployeeForm />
             </Paper>
